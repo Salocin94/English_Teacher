@@ -1,6 +1,8 @@
 # English_Teacher
 Instrutor de inglês que corrige o usuário e continua uma conversa no nível selecionado.
 
+PARA UTILIZAR, COPIE TODO O CÓDIGO E COLE NO SEU GOOGLE COLAB.
+
 Prática de Conversação em Inglês com Ai Teacher
 
 Este projeto oferece um ambiente interativo para praticar conversação em inglês em diferentes níveis do CEFR (Quadro Comum Europeu de Referência para Línguas), de A1 a C2. 
@@ -34,4 +36,27 @@ Níveis CEFR e Escalonamento
 O projeto utiliza diferentes agentes AI, cada um especializado para um nível CEFR específico (A1, A2, B1, B2, C1, C2). Cada agente é instruído a:
 Usar vocabulário e gramática apropriados para o seu nível.Corrigir erros comuns para esse nível.Gerar perguntas que incentivem a prática nesse nível.
 Para os níveis A1 a C1, o agente monitoriza a conversa. Se as suas respostas indicarem prontidão para o nível seguinte (por exemplo, usando estruturas ou vocabulário mais complexos), o agente indicará isso e a sessão atual terminará, permitindo que inicie uma nova sessão no nível superior sugerido. O nível C2 é o mais alto e não inclui escalonamento.Estrutura do Projeto (Frontend.ipynb)
-O notebook contém as seguintes partes principais:Instalação de Bibliotecas e Configuração da Chave da API: Configura o ambiente e carrega a chave da API.Importações: Importa as classes e bibliotecas necessárias (google.adk, google.generativeai, ipywidgets, etc.).Variáveis Globais: Define variáveis para gerir o estado da sessão e os elementos da interface.Widgets de Feedback: Configura os ipywidgets usados para exibir correções e alternativas.Função on_translation_button_clicked: Lida com o evento de clique para o botão de tradução.Função call_agent: Uma função auxiliar para enviar mensagens ao agente AI e obter a resposta bruta.Função parse_agent_response: Analisa a resposta estruturada de quatro partes do agente AI.Definições de Agentes (get_teacherA1_agent a get_teacherC2_agent): Funções que definem a instrução e o comportamento para cada agente de nível CEFR usando google.adk.agents.Agent.Mapeamento de Níveis de Agente: Um dicionário que mapeia os níveis CEFR para as suas respetivas funções de criação de agente e gatilhos de escalonamento.Função start_session_clicked: Lida com o evento de clique para o botão "Iniciar Sessão", inicializa a sessão e o agente apropriado.Função send_message_clicked: Lida com o evento de clique para o botão "Enviar", envia a mensagem do utilizador, processa a resposta da AI, atualiza a interface e verifica o escalonamento de nível.Configuração de Widgets da Interface: Define os ipywidgets para a seleção de nível, caixa de entrada, botão de envio e área de saída.Layout e Exibição: Organiza os widgets e exibe a interface.Ligação de Eventos: Conecta os eventos de clique dos botões às suas respetivas funções.Mensagem Inicial: Exibe uma mensagem de boas-vindas e verificação do estado da chave da API na área de saída.ContribuiçõesContribuições são bem-vindas! Se você quiser ajudar a melhorar este projeto, aqui estão algumas áreas onde a sua contribuição seria muito valiosa:Melhorar a Interface: Aprimorar a experiência do usuário e o design da interface interativa.Adicionar Sistema de Pontos: Implementar um sistema de gamificação para motivar os usuários.Criar Jogos Interativos: Desenvolver pequenos jogos ou atividades baseadas em texto para tornar a prática mais divertida.Adicionar Base de Dados de Vocabulário: Criar um sistema para rastrear e reforçar o vocabulário aprendido pelo usuário.Refinar a Lógica dos Agentes: Melhorar as instruções e o comportamento dos agentes AI para fornecer feedback ainda mais preciso e útil.Expandir Níveis ou Tópicos: Adicionar suporte para outros níveis de proficiência ou tópicos de conversação específicos.Sinta-se à vontade para enviar pull requests com as suas ideias e implementações!
+
+O notebook contém as seguintes partes principais:
+Instalação de Bibliotecas e Configuração da Chave da API: Configura o ambiente e carrega a chave da API.
+Importações: Importa as classes e bibliotecas necessárias (google.adk, google.generativeai, ipywidgets, etc.).
+Variáveis Globais: Define variáveis para gerir o estado da sessão e os elementos da interface.
+Widgets de Feedback: Configura os ipywidgets usados para exibir correções e alternativas.
+Função on_translation_button_clicked: Lida com o evento de clique para o botão de tradução.
+Função call_agent: Uma função auxiliar para enviar mensagens ao agente AI e obter a resposta bruta.
+Função parse_agent_response: Analisa a resposta estruturada de quatro partes do agente AI.
+Definições de Agentes (get_teacherA1_agent a get_teacherC2_agent): Funções que definem a instrução e o comportamento para cada agente de nível CEFR usando google.adk.agents.Agent.
+Mapeamento de Níveis de Agente: Um dicionário que mapeia os níveis CEFR para as suas respetivas funções de criação de agente e gatilhos de escalonamento.
+Função start_session_clicked: Lida com o evento de clique para o botão "Iniciar Sessão", inicializa a sessão e o agente apropriado.
+Função send_message_clicked: Lida com o evento de clique para o botão "Enviar", envia a mensagem do utilizador, processa a resposta da AI, atualiza a interface e verifica o escalonamento de nível.
+Configuração de Widgets da Interface: Define os ipywidgets para a seleção de nível, caixa de entrada, botão de envio e área de saída.
+Layout e Exibição: Organiza os widgets e exibe a interface.Ligação de Eventos: Conecta os eventos de clique dos botões às suas respetivas funções.
+Mensagem Inicial: Exibe uma mensagem de boas-vindas e verificação do estado da chave da API na área de saída.
+
+Contribuições: Contribuições são bem-vindas! Se você quiser ajudar a melhorar este projeto, aqui estão algumas áreas onde a sua contribuição seria muito valiosa:
+Melhorar a Interface: Aprimorar a experiência do usuário e o design da interface interativa.
+Adicionar Sistema de Pontos: Implementar um sistema de gamificação para motivar os usuários.
+Criar Jogos Interativos: Desenvolver pequenos jogos ou atividades baseadas em texto para tornar a prática mais divertida.
+Adicionar Base de Dados de Vocabulário: Criar um sistema para rastrear e reforçar o vocabulário aprendido pelo usuário.
+Refinar a Lógica dos Agentes: Melhorar as instruções e o comportamento dos agentes AI para fornecer feedback ainda mais preciso e útil.
+Expandir Níveis ou Tópicos: Adicionar suporte para outros níveis de proficiência ou tópicos de conversação específicos.
