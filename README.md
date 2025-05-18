@@ -1,7 +1,7 @@
 # English_Teacher
 Instrutor de inglês que corrige o usuário e continua uma conversa no nível selecionado.
 
-PARA UTILIZAR, COPIE TODO O CÓDIGO E COLE NO SEU GOOGLE COLAB.
+PARA UTILIZAR, COPIE TODO O CÓDIGO EM "Código do projeto" E COLE NO SEU GOOGLE COLAB.
 
 Prática de Conversação em Inglês com Ai Teacher
 
