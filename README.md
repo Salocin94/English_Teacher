@@ -1,72 +1,93 @@
-# English_Teacher
-Instrutor de inglês que corrige o usuário e continua uma conversa no nível selecionado.
+ TeachAi
+Bem-vindo ao projeto que transforma o aprendizado de inglês em uma aventura personalizada! Este não é apenas mais um aplicativo de idiomas; é o seu tutor pessoal de IA, pronto para guiá-lo desde os primeiros passos até a fluidez total, adaptando-se ao seu ritmo e nível.
 
-PARA UTILIZAR, COPIE TODO O CÓDIGO EM "Código do projeto" E COLE NO SEU GOOGLE COLAB.
+Imagine ter um professor dedicado que entende suas necessidades, corrige seus erros com explicações claras e o desafia suavemente à medida que você melhora. É exatamente isso que construímos aqui, usando o poder do Google ADK e da API Gemini.
 
-Prática de Conversação em Inglês com Professor Ai
+A História por Trás do Projeto
+Tudo começou com a ideia de tornar o aprendizado de idiomas mais interativo e menos intimidante. Muitos de nós lutamos com a consistência ou encontramos materiais que não se encaixam perfeitamente em nosso nível. E se pudéssemos criar um ambiente onde a prática de conversação fosse natural, adaptável e sempre disponível?
 
-Este projeto oferece um ambiente interativo para praticar conversação em inglês em diferentes níveis do CEFR (Quadro Comum Europeu de Referência para Línguas), de A1 a C2. 
-Ele utiliza o modelo Google Gemini para atuar como um professor de inglês AI, fornecendo respostas, correções e formas alternativas de expressão com base na sua entrada e no nível de proficiência selecionado.FuncionalidadesPrática em Vários Níveis: Escolha praticar nos níveis CEFR A1, A2, B1, B2, C1 ou C2.
+Com a ascensão dos modelos de linguagem avançados, vimos a oportunidade de criar agentes de conversação que não apenas respondem, mas ensinam, corrigem e motivam. Assim nasceu o conceito de um sistema de tutoria multinível, onde você progride por diferentes estágios de proficiência, como em uma jornada épica de aprendizado.
 
-Interaja com um agente AI adaptado ao nível de proficiência selecionado.Feedback em Tempo Real: Receba feedback imediato sobre suas frases, incluindo correções e explicações em português.Formas Alternativas: Obtenha maneiras alternativas de expressar suas ideias naturalmente em inglês, com traduções para o português.
+Sua Jornada Começa: Nível A1 - Os Primeiros Passos
+Ao iniciar sua sessão, você será recebido pelo nosso Agente A1. Ele é gentil, paciente e focado no básico. Você aprenderá a se apresentar, falar sobre coisas simples e construir suas primeiras frases em inglês.
 
-Escalonamento de Nível: A AI pode detetar quando você está pronto para avançar para um nível CEFR superior e indicará isso durante a conversa (até C2).
+Nosso tutor A1 está atento aos erros comuns de iniciantes (como a ordem das palavras e verbos básicos) e os corrige com explicações em português, oferecendo alternativas para ajudar a fixar o aprendizado. A cada interação, ele o encoraja e faz uma pergunta simples para manter a conversa fluindo.
 
-Interface Interativa: Interface amigável construída com ipywidgets para selecionar o nível e enviar mensagens.
-
-Requisitos: Google ColabAs seguintes bibliotecas Python:google-genaigoogle-adkipywidgets
 
 ![image](https://github.com/user-attachments/assets/f314db00-ff0b-4acc-8f48-67a0d34421f6)
 
 ![image](https://github.com/user-attachments/assets/4d5ff549-0649-4548-83f2-184c3f11b9bf)
 
- 
-A Imagem acima mostra o funcionamento do sistema. Primeiramente você escolhe o nível que deseja praticar e então começa a iteragir com o bot.
-O histórico de mensagem fica acima da caixa de diálogo verde(ou amarela). Caso ela esteja verde, você forneceu uma resposta correta e ali tem apenas uma alternativa de uso para seu contexto, que pode ser traduzida em tempo real.  Caso esteja amarela, significa que vocÊ cometeu o erro e aparecerá sua correção.
-
-"Teacher:" Aqui, temos a última resposta dada pelo agente e abaixo dela está sua tradução.
+![image](https://github.com/user-attachments/assets/f37c34e3-94d0-4c52-8269-5c5496ccfbfd)
 
 
-Configuração
-Configurar Chave da API do Google: O projeto requer uma Chave da API do Google para usar o modelo Gemini.Vá para o Google AI Studio ou Google Cloud Console para obter uma chave da API.No Google Colab, clique no ícone "Secrets" (🔑) na barra lateral esquerda. Adicione um novo segredo com o nome GOOGLE_API_KEY e cole a sua chave da API como valor.
+Construindo Fluidez: Níveis A2 a B2 - Explorando Novos Horizontes
+À medida que você ganha confiança e seu vocabulário cresce, o sistema percebe sua evolução. Quando você estiver pronto, será suavemente escalado para o próximo nível.
 
-Se estiver a executar localmente, será necessário definir a variável de ambiente GOOGLE_API_KEY antes de executar o notebook.
+A2: Comece a construir frases mais complexas, falar sobre rotinas e experiências passadas. O Agente A2 introduz novos tempos verbais e estruturas, sempre corrigindo e incentivando.
 
-Como Executar
+B1: Você já consegue lidar com situações de viagem e conversar sobre tópicos de interesse pessoal. O Agente B1 foca em refinar suas frases, expandir seu vocabulário e usar tempos verbais de forma mais precisa.
 
-Abra o notebook Frontend.ipynb no Google ColabExecute todas as células do notebook sequencialmente.Como UsarApós executar as células, uma interface interativa irá aparecer.
-Selecione o seu nível de proficiência em inglês desejado usando o menu pendente (A1 a C2).Clique no botão "Iniciar Sessão".
-O professor AI irá cumprimentá-lo no nível selecionado.Escreva a sua mensagem em inglês na caixa de entrada e clique em "Enviar".
-O professor AI irá responder, fornecer feedback (correção ou alternativa) e fazer uma nova pergunta para continuar a conversa.
-Correções e alternativas aparecerão numa caixa colorida (verde para correto, laranja para precisar de revisão). 
-Pode clicar em "Tradução" para ver a tradução para português da frase alternativa/corrigida.
-Para terminar a sessão, escreva sair na caixa de entrada e prima Enter ou clique em "Enviar".
+B2: A fluidez aumenta significativamente. Você pode entender textos complexos e interagir com mais espontaneidade. O Agente B2 desafia você com tópicos mais abstratos e refina o uso de estruturas gramaticais avançadas.
 
-Níveis CEFR e Escalonamento
-O projeto utiliza diferentes agentes AI, cada um especializado para um nível CEFR específico (A1, A2, B1, B2, C1, C2). Cada agente é instruído a:
-Usar vocabulário e gramática apropriados para o seu nível.Corrigir erros comuns para esse nível.Gerar perguntas que incentivem a prática nesse nível.
-Para os níveis A1 a C1, o agente monitoriza a conversa. Se as suas respostas indicarem prontidão para o nível seguinte (por exemplo, usando estruturas ou vocabulário mais complexos), o agente indicará isso e a sessão atual terminará, permitindo que inicie uma nova sessão no nível superior sugerido. O nível C2 é o mais alto e não inclui escalonamento.Estrutura do Projeto (Frontend.ipynb)
+Em cada nível intermediário, os agentes se adaptam, aumentando a complexidade das perguntas e o escopo das correções, garantindo que você esteja sempre aprendendo e sendo desafiado na medida certa.
 
-O notebook contém as seguintes partes principais:
-Instalação de Bibliotecas e Configuração da Chave da API: Configura o ambiente e carrega a chave da API.
-Importações: Importa as classes e bibliotecas necessárias (google.adk, google.generativeai, ipywidgets, etc.).
-Variáveis Globais: Define variáveis para gerir o estado da sessão e os elementos da interface.
-Widgets de Feedback: Configura os ipywidgets usados para exibir correções e alternativas.
-Função on_translation_button_clicked: Lida com o evento de clique para o botão de tradução.
-Função call_agent: Uma função auxiliar para enviar mensagens ao agente AI e obter a resposta bruta.
-Função parse_agent_response: Analisa a resposta estruturada de quatro partes do agente AI.
-Definições de Agentes (get_teacherA1_agent a get_teacherC2_agent): Funções que definem a instrução e o comportamento para cada agente de nível CEFR usando google.adk.agents.Agent.
-Mapeamento de Níveis de Agente: Um dicionário que mapeia os níveis CEFR para as suas respetivas funções de criação de agente e gatilhos de escalonamento.
-Função start_session_clicked: Lida com o evento de clique para o botão "Iniciar Sessão", inicializa a sessão e o agente apropriado.
-Função send_message_clicked: Lida com o evento de clique para o botão "Enviar", envia a mensagem do utilizador, processa a resposta da AI, atualiza a interface e verifica o escalonamento de nível.
-Configuração de Widgets da Interface: Define os ipywidgets para a seleção de nível, caixa de entrada, botão de envio e área de saída.
-Layout e Exibição: Organiza os widgets e exibe a interface.Ligação de Eventos: Conecta os eventos de clique dos botões às suas respetivas funções.
-Mensagem Inicial: Exibe uma mensagem de boas-vindas e verificação do estado da chave da API na área de saída.
+Dominando o Idioma: Níveis C1 e C2 - O Ápice da Proficiência
+Chegar aos níveis C1 e C2 significa que você está se aproximando da proficiência nativa.
 
-Contribuições: Contribuições são bem-vindas! Se você quiser ajudar a melhorar este projeto, aqui estão algumas áreas onde a sua contribuição seria muito valiosa:
-Melhorar a Interface: Aprimorar a experiência do usuário e o design da interface interativa.
-Adicionar Sistema de Pontos: Implementar um sistema de gamificação para motivar os usuários.
-Criar Jogos Interativos: Desenvolver pequenos jogos ou atividades baseadas em texto para tornar a prática mais divertida.
-Adicionar Base de Dados de Vocabulário: Criar um sistema para rastrear e reforçar o vocabulário aprendido pelo usuário.
-Refinar a Lógica dos Agentes: Melhorar as instruções e o comportamento dos agentes AI para fornecer feedback ainda mais preciso e útil.
-Expandir Níveis ou Tópicos: Adicionar suporte para outros níveis de proficiência ou tópicos de conversação específicos.
+C1: Você pode usar o inglês de forma eficaz para fins acadêmicos e profissionais, compreendendo significados implícitos. O Agente C1 foca em nuances, expressões idiomáticas e um uso mais sofisticado da língua.
+
+C2: No nível de domínio, você compreende praticamente tudo e se expressa com total fluidez e precisão. O Agente C2 atua como um parceiro de conversação avançado, refinando os detalhes mais sutis do seu inglês.
+
+Neste ponto, a jornada de escalonamento chega ao seu ápice dentro do framework CEFR, mas a prática e o refinamento continuam, permitindo que você mantenha e aprimore seu alto nível de proficiência.
+
+Como Esta Mágica Acontece (Sob o Capô)
+Este projeto é construído sobre uma arquitetura inteligente:
+
+Google ADK (Agent Development Kit): Fornece a estrutura para definir e gerenciar os agentes de conversação.
+
+Google Gemini API: O coração do sistema, oferecendo os poderosos modelos de linguagem (gemini-2.0-flash ou outros) que alimentam a inteligência dos agentes.
+
+Sistema Multi-Agente: Cada nível CEFR (A1 a C2) é representado por um agente especializado, com instruções e foco gramatical/vocabular apropriados para aquele nível.
+
+Escalonamento Inteligente: Os agentes são instruídos a identificar quando a proficiência do usuário excede o nível atual, sinalizando a prontidão para a transição para o próximo agente. Isso é feito através de um "gatilho" oculto na resposta do agente.
+
+Feedback Estruturado: A resposta de cada agente segue um formato unificado de quatro partes: a frase original do usuário, a correção gramatical (em português), uma alternativa/correção em inglês com tradução, e a resposta do agente com uma pergunta para continuar a conversa (também com tradução). Isso garante feedback claro e consistente.
+
+Interface Interativa (Widgets): Utiliza ipywidgets para criar uma interface simples no ambiente do notebook (como Google Colab), permitindo que o usuário selecione o nível inicial e interaja facilmente.
+
+Começando Sua Jornada
+Para embarcar nesta aventura de aprendizado, você precisará:
+
+Obter uma Chave API do Google Gemini: Siga as instruções na documentação do Google AI Studio para conseguir sua chave.
+
+Configurar o Ambiente: Este código é projetado para rodar em um ambiente como o Google Colab.
+
+Instalar Dependências: Execute a primeira célula do notebook para instalar as bibliotecas necessárias (google-genai, google-adk, ipywidgets).
+
+Configurar a Chave API no Colab Secrets: Adicione sua chave API como um segredo no Colab com o nome GOOGLE_API_KEY.
+
+Executar o Código: Rode as células restantes no notebook.
+
+Interagir: Use a interface de widgets para selecionar seu nível inicial e começar a conversar com seu tutor de IA!
+
+Próximos Capítulos da História
+Este projeto é um ponto de partida. Há muitas maneiras de expandir esta jornada:
+
+Adicionar mais níveis de proficiência (se aplicável, embora C2 seja o topo do CEFR).
+
+Incorporar feedback de pronúncia.
+
+Expandir os tipos de exercícios (escrita, audição, etc.).
+
+Desenvolver uma interface web mais robusta.
+
+Personalizar ainda mais a experiência do agente com base nos interesses do usuário.
+
+Contribuindo
+Sua contribuição pode ajudar a moldar os próximos capítulos desta história. Sinta-se à vontade para fazer um fork do repositório, propor melhorias e enviar pull requests.
+
+Licença
+Este projeto está sob a Licença [Nome da Licença, por exemplo, MIT]. Veja o arquivo LICENSE para mais detalhes.
+
+Que sua jornada no aprendizado de inglês seja repleta de descobertas e sucesso! Happy practicing!
