@@ -3,7 +3,7 @@ Instrutor de inglês que corrige o usuário e continua uma conversa no nível se
 
 PARA UTILIZAR, COPIE TODO O CÓDIGO EM "Código do projeto" E COLE NO SEU GOOGLE COLAB.
 
-Prática de Conversação em Inglês com Ai Teacher
+Prática de Conversação em Inglês com Professor Ai
 
 Este projeto oferece um ambiente interativo para praticar conversação em inglês em diferentes níveis do CEFR (Quadro Comum Europeu de Referência para Línguas), de A1 a C2. 
 Ele utiliza o modelo Google Gemini para atuar como um professor de inglês AI, fornecendo respostas, correções e formas alternativas de expressão com base na sua entrada e no nível de proficiência selecionado.FuncionalidadesPrática em Vários Níveis: Escolha praticar nos níveis CEFR A1, A2, B1, B2, C1 ou C2.
@@ -15,6 +15,12 @@ Escalonamento de Nível: A AI pode detetar quando você está pronto para avanç
 Interface Interativa: Interface amigável construída com ipywidgets para selecionar o nível e enviar mensagens.
 
 Requisitos: Google ColabAs seguintes bibliotecas Python:google-genaigoogle-adkipywidgets
+
+![image](https://github.com/user-attachments/assets/f314db00-ff0b-4acc-8f48-67a0d34421f6)
+ 
+A Imagem acima mostra o funcionamento do sistema. Primeiramente você escolhe o nível que deseja praticar e então começa a iteragir com o bot.
+O histórico de mensagem fica acima da caixa de diálogo verde(ou amarela). Caso ela esteja verde, você forneceu uma resposta correta e ali tem apenas uma alternativa de uso para seu contexto, que pode ser traduzida em tempo real. 
+"Teacher:" Aqui, é a última resposta dada pelo agente e abaixo dela está sua tradução.
 
 
 Configuração
