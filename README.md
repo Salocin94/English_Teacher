@@ -17,10 +17,14 @@ Interface Interativa: Interface amigável construída com ipywidgets para seleci
 Requisitos: Google ColabAs seguintes bibliotecas Python:google-genaigoogle-adkipywidgets
 
 ![image](https://github.com/user-attachments/assets/f314db00-ff0b-4acc-8f48-67a0d34421f6)
+
+![image](https://github.com/user-attachments/assets/4d5ff549-0649-4548-83f2-184c3f11b9bf)
+
  
 A Imagem acima mostra o funcionamento do sistema. Primeiramente você escolhe o nível que deseja praticar e então começa a iteragir com o bot.
-O histórico de mensagem fica acima da caixa de diálogo verde(ou amarela). Caso ela esteja verde, você forneceu uma resposta correta e ali tem apenas uma alternativa de uso para seu contexto, que pode ser traduzida em tempo real. 
-"Teacher:" Aqui, é a última resposta dada pelo agente e abaixo dela está sua tradução.
+O histórico de mensagem fica acima da caixa de diálogo verde(ou amarela). Caso ela esteja verde, você forneceu uma resposta correta e ali tem apenas uma alternativa de uso para seu contexto, que pode ser traduzida em tempo real.  Caso esteja amarela, significa que vocÊ cometeu o erro e aparecerá sua correção.
+
+"Teacher:" Aqui, temos a última resposta dada pelo agente e abaixo dela está sua tradução.
 
 
 Configuração
