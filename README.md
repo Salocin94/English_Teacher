@@ -1,3 +1,5 @@
+######### PARA TESTAR O SOFTWARE, VOCÊ DEVE COPIAR O CÓDIGO EM "Código do projeto" E COLAR NO GOOGLE COLAB. #########
+
  TeachAi
 Bem-vindo ao projeto que transforma o aprendizado de inglês em uma aventura personalizada! Este não é apenas mais um aplicativo de idiomas; é o seu tutor pessoal de IA, pronto para guiá-lo desde os primeiros passos até a fluidez total, adaptando-se ao seu ritmo e nível.
 
